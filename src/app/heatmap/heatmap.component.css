@@ -1,0 +1,12 @@
+.heatmap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+}
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+}

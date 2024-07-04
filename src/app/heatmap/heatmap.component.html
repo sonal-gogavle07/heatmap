@@ -1,0 +1,20 @@
+<p> JAN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    FEB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    MAR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    APR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    MAY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    JUN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    JUL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    AUG &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    SEP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    OCT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    NOV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    DEC</p>
+<div class="heatmap">
+    <div class="row" *ngFor="let week of getWeeksInYear()">
+      <div class="cell" *ngFor="let day of week"
+        [style.background-color]="getCellColor(day)"
+        [title]="getCellTitle(day)">
+      </div>
+    </div>
+</div>
